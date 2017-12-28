@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { Item } from '../item';
-import { ItemService } from '../item.service';
 
 @Component({
   selector: 'app-item-detail',
@@ -11,10 +10,7 @@ import { ItemService } from '../item.service';
 export class ItemDetailComponent implements OnInit {
 
   @Input() item: Item;
-  id: number;
-  constructor(
-    private itemService: ItemService
-  ) { }
+  constructor() { }
 
   ngOnInit() {
   }
